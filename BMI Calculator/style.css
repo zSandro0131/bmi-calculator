@@ -1,0 +1,111 @@
+/*Font Import*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/007/120/269/original/night-landscape-with-silhouettes-of-mountains-and-sky-with-stars-starry-night-sky-background-dark-blue-sky-with-shinning-stars-illustration-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.main-container{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 420px;
+    height: 420px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-title{
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgb(192, 60, 60);
+}
+
+.name-box , .weight-box , .height-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 22px;
+    
+}
+
+input {
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 5px;
+    border-bottom: 2px solid rgb(146, 143, 143);
+    margin-bottom: 20px;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+#calcBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: blueviolet;
+    border: 1px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#calcBtn:hover {
+    transition: all .5s;
+    background-color: rgb(150, 81, 214);
+}
+
+.modal{
+    background-color: white;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 1%;
+    height: auto;
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.modalText{
+    color:black;
+    margin-bottom: 15px;
+}
+
+#closeModalBtn{
+    position: absolute;
+    right: 25%;
+    top: 62%;
+    width: 50%;
+    border-radius: 10px;
+    background-color: blueviolet;
+    padding: 5px;
+    color: white;
+}
+
+#closeModalBtn:hover {
+    transition: all .5s;
+    background-color: rgb(150, 81, 214);
+    cursor: pointer;
+}
